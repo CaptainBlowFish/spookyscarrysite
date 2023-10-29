@@ -1,0 +1,62 @@
+.button-container {
+  text-align: center;
+  background-color: transparent;
+  
+}
+
+@font-face {
+  font-family: 'Font';
+  src: url('font.woff') format('woff');
+}
+
+.cb {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Font', cursive;
+  border: 2px solid #ea5c39;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.2s ease;
+  position: static;
+
+  transform: translateX(-50%);
+}
+
+.cb:hover {
+  background-color: #f0a493;
+  color: #222;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+body {
+  cursor: crosshair;
+  background: radial-gradient(#ffffff, #00000066);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  height: 100%;
+  width: 100%;
+}
+
+#desc {
+  position: absolute;
+  bottom: 25%;
+  /* Adjusted to be above the #container with some space */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#x {
+  position: absolute;
+  left: 48%;
+  bottom: 10%;
+}
